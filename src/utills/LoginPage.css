@@ -1,0 +1,89 @@
+h1 {
+  font-family: 'Arial', sans-serif;
+  color: #d6d6d6;
+  text-align: center;
+  font-size: 2.5rem; 
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 380px;
+  height: auto;
+  padding: 30px 20px;
+  margin-top: 10%;
+  margin-left: 5%;
+  box-sizing: border-box;
+}
+
+
+
+.login-button {
+  width: 370px;
+  height: 35px;
+  background-color: rgb(53, 65, 176);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-button-on {
+  background-color: rgb(75, 95, 250);
+   cursor: pointer;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: #121212;
+  color: #fff9f9;
+  border: 1px solid #7e7979;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+input:focus {
+  color: #ffffff;
+  background-color: #121212;
+  border: 1px solid #7e7979;
+}
+
+.Link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Link:hover {
+  
+  color: white;
+}
+
+/* ✅ 반응형 보완 */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .login-page {
+    margin-top: 20%;
+    padding: 20px 10px;
+  }
+}
