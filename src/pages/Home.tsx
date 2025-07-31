@@ -10,7 +10,7 @@ import { IoHeartSharp ,IoChatbubbleOutline , IoPaperPlaneOutline , IoHeartOutlin
 export default function Home() {
  const storyListRef = useRef<HTMLDivElement | null>(null);
  const [expandedPosts , setExpandedPosts] = useState<{ [key : number] : boolean}>({})
- const [likePost , setLikePost] = useState<{[key : number] : boolean}>({})
+
  const [postItems, setPostItems] = useState(PostMap);
 
  const toggleShowMore = (id: number) => {
