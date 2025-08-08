@@ -4,11 +4,8 @@ import { UserProvider, useUser } from './contexts/UserContext';
 import Home from './pages/Home';
 import SignUp from './pages/SignUp';
 import PublicProfile from './pages/PublicProfile'
-import Loading from './component/Loading';
 import "./App.css"
-import TestFetch from './TestFetch'
 import ErrorPage from './pages/error';
-import { useEffect, useState } from 'react';
 
 function AppRoutes() {
   const { isLoggedIn, user  } = useUser();
