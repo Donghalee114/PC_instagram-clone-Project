@@ -1,0 +1,67 @@
+.Profile-Top-Container{
+  width: 1000px;
+  margin-left: 500px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 70px;
+  position: absolute;
+  top : 0;
+  left: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10000px;
+  max-height: 100%;
+  flex-direction: column;
+}
+
+.ProfileButton{
+  color: white;
+  padding: 10px;
+  background-color: #25292e;
+  max-height: 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProfileButton:hover{
+   background-color: #353a41;
+}
+.userInfo{
+  display: flex;
+  justify-Content: start;
+  align-Items: center;
+}
+
+
+.userInfo p{
+  margin-right: 45px;
+}
+
+.canClickp{
+  cursor: pointer;
+}
+
+.canClickp:hover{
+  text-decoration: underline;
+}
+
+
+.Profile-Mid-Container{
+  background-color: red;
+  width: 500px;
+  
+}
+
+.iconDiv{
+  background : red ; 
+  width : 70%  ;
+   height : 50px ;
+    display : flex ;
+     justify-Content : space-around ; 
+     align-Items : center
+}

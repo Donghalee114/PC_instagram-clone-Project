@@ -1,0 +1,17 @@
+.auto-logout-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #1f2937;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  font-size: 1rem;
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+.warning-message p {
+  margin: 4px 0;
+}

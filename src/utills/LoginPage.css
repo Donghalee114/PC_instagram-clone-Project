@@ -76,6 +76,11 @@ input:focus {
   color: white;
 }
 
+.failLogin {
+
+  border : 1px solid rgba(255, 33, 33, 0.829)
+}
+
 /* ✅ 반응형 보완 */
 @media screen and (max-width: 480px) {
   h1 {

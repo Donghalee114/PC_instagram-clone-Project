@@ -6,6 +6,7 @@ type InputProps = {
   placeholder?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   className?: string;
+  loginFali? : boolean
 };
 
 export default function Input({

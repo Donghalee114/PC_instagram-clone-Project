@@ -1,0 +1,11 @@
+.clickText{
+  padding: 10px;
+  border: 1px solid rgba(245, 91, 91, 0.836);
+  width: 200px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.clickText:hover{
+ border: 1px solid rgb(250, 38, 38);
+}

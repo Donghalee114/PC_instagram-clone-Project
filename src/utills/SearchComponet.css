@@ -1,0 +1,16 @@
+.userBox{
+  cursor : pointer ; 
+  display : flex ;
+  align-items : center; 
+  padding : 10px 20px ;
+  width : 280px;
+  margin-top : 10px ; 
+  margin-Bottom : 5px;
+  justify-Content : "center";
+  position: relative;
+  z-index: 99;
+}
+
+.userBox:hover{
+background-color: #c2c2c24b;
+}
