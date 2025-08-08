@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Input from "../component/input";
+
 import { FaFacebookSquare } from "react-icons/fa";
 import testImg from "../assets/landing-3x.png";
-import { useUser , UserProvider} from "../contexts/UserContext"; // context import
+import { useUser } from "../contexts/UserContext"; // context import
 import { supabase } from "../lib/supabaseClient";
 import '../utills/LoginPage.css'
 

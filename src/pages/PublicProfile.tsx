@@ -9,7 +9,7 @@ import Headers from "../component/Headers";
 import { PiGearLight } from "react-icons/pi";
 import { FaChevronDown } from "react-icons/fa";
 import Loading from "../component/Loading"
-import Search from "../component/Search";
+
 
 import { supabase } from "../lib/supabaseClient";
 

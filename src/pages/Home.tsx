@@ -4,7 +4,7 @@ import '../utills/HomePage.css'
 
 import PostMap from "../utills/postItem.json"
 import DefaultPfp from "../assets/Default_pfp.jpg"
-import { useUser , UserProvider} from "../contexts/UserContext"; //UserContext import
+import { useUser } from "../contexts/UserContext"; //UserContext import
 
 import {
   IoHeartSharp,
