@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaFacebookSquare } from 'react-icons/fa';
 import Input from '../component/input';
 import EmailVerificationModal from '../component/EmailVerificationModal';
-const API_URL = import.meta.env.VITE_API_URL;
+
 
 export default function SignUp() {
   const Navigate = useNavigate();
@@ -14,6 +14,7 @@ export default function SignUp() {
   const [getUserId, setGetUserId] = useState('');
   const [isSignUpButtonOn, setIsSignUpButtonOn] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000"
 
   // 추가: 아이디 유효성 / 중복 상태
   const [isValidUsername, setIsValidUsername] = useState(false);

@@ -17,22 +17,13 @@ import { supabase } from "../lib/supabaseClient";
 export default function PublicProfile() {
   const navigate = useNavigate()
   const { username } = useParams();
-  const { user: loggedInUser } = useUser();
+  const { user: loggedInUser , handleLogout} = useUser();
   const [profileUser, setProfileUser] = useState<User | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [isFollowing, setIsFollowing] = useState<boolean>(false);
   const [followLoading, setFollowLoading] = useState<boolean>(false);
 
 
-
-  const handleLogout = async () => {
-    const { error } = await supabase.auth.signOut();
-    if (error) {
-      console.error("로그아웃 실패:", error.message);
-    } else {
-    navigate('/login')
-    }
-  };
 
   useEffect(() => {
     const fetchProfile = async () => {

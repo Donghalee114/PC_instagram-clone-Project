@@ -7,6 +7,7 @@ import PublicProfile from './pages/PublicProfile'
 import "./App.css"
 import ErrorPage from './pages/error';
 
+
 function AppRoutes() {
   const { isLoggedIn, user  } = useUser();
 
@@ -21,7 +22,7 @@ function AppRoutes() {
           path="/login"
           element={isLoggedIn ? <Navigate to="/" /> : <Login />}
         />
-    
+        
         <Route path="/signup" element={<SignUp />} />
         <Route path='/errorPage' element={<ErrorPage/>} />
         <Route path="/:username" element={isLoggedIn && user ? <PublicProfile />: <Navigate to="/login" />} />

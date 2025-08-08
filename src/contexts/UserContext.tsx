@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import type { User } from '../types/User';
 import { supabase } from '../lib/supabaseClient';
 import Loding from '../component/Loading';
+import { useNavigate } from 'react-router-dom';
 
 type UserContextType = {
   user: User | null;
@@ -20,6 +21,7 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const navigate = useNavigate()
 
   //Supabase 클라이언트 준비 상태를 관리하는 새로운 상태
   const [isSupabaseReady, setIsSupabaseReady] = useState(false);
@@ -160,6 +162,8 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     setIsLoading(false)
     setUser(null)
     localStorage.setItem('isLoggedIn', 'false');
+    supabase.auth.signOut()
+    navigate('/')
   }
 
   return (

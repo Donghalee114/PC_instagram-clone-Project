@@ -7,7 +7,7 @@ export default function Loading() {
 
   const [showMessage, setShowMessage] = useState(false);
   const [count, setCount] = useState(10);
-  const handleLogout = useUser()
+  const{ handleLogout }= useUser()
 
   useEffect(() => {
     setShowMessage(false);
@@ -69,7 +69,7 @@ export default function Loading() {
           로그인 정보를 불러오고 있어요...<br />
           {count}초 후 자동으로 새로고침 됩니다.<br />
           문제가 지속되면 다시 로그인 해주세요.
-          <h2 style={{width : "200px" , height : "40px" , border : "1px solid red" , cursor : "pointer"}} onClick={() => handleLogout}>로그아웃 하기</h2>
+          <div style={{marginTop :"20px" , width : "250px" , height : "40px" , border : "1px solid red" , cursor : "pointer" , display : "flex" , alignItems : "center" , justifyContent : "center"}} onClick={handleLogout}>로그아웃 하기</div>
         </p>
       )}
     </div>
