@@ -1,5 +1,5 @@
 import {
-  FaHome, FaSearch, FaPlusSquare, FaHeart, FaUser,
+  FaHome, FaSearch, FaPlusSquare, FaHeart,
   FaRegCompass, FaRegPaperPlane, FaInstagram
 } from 'react-icons/fa';
 import { FaRegSquarePlus } from 'react-icons/fa6';

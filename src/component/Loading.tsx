@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom';
 
-import { UserProvider, useUser } from "../contexts/UserContext";
+
+import {  useUser } from "../contexts/UserContext";
 
 export default function Loading() {
-  const navigate = useNavigate();
+
   const [showMessage, setShowMessage] = useState(false);
   const [count, setCount] = useState(10);
   const handleLogout = useUser()

@@ -1,5 +1,4 @@
-// src/main.tsx
-import React from 'react';
+// src/main.tsx;
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { BrowserRouter } from 'react-router-dom';
